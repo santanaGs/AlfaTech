@@ -1,0 +1,310 @@
+/* ============================== HTML Reseting / Reiniciando HTML  ==============================  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* ============================== CSS Variables / Variaveis CSS ==============================  */
+
+:root {
+    /*Colors*/
+    --clr-primary: #2f86d6;
+    --clr-secondary: #23303E;
+
+    --clr-neutral-400: #fff;
+    --clr-neutral-500: #f6f6f6;
+    --clr-neutral-600: #f1f3f7;
+    --clr-neutral-700: #a89f9f;
+    --clr-neutral-900: #000;
+
+    --clr-shadow: rgba(47, 134, 214, 1);
+
+}
+
+/* ============================== Styling Header ==============================  */
+
+.header-content {
+    width: 1220px;
+    height: 160px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo-topo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-topo img {
+    height: 80px;
+}
+
+.logo-topo p::first-line {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--clr-neutral-900);
+}
+
+.logo-topo p {
+    color: var(--clr-primary);
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: #233032;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.nav-link:hover{
+    color: var(--clr-primary);
+}
+
+/* ============================== Styling Banner ==============================  */
+
+.banner {
+    background-color: var(--clr-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-banner {
+    color: var(--clr-neutral-400);
+    text-align: left;
+    width: 400px;
+}
+
+/* ============================== Styling Promo ==============================  */
+
+.promo {
+    background-color: var(--clr-secondary);
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.promo-text {
+    color: var(--clr-neutral-400);
+    line-height: 30px;
+}
+
+.promo-text p {
+    font-size: 13px;
+}
+
+.link-promo {
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-400);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px;
+
+    border-radius: 0.3em;
+}
+
+a::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(assets/icone-foguete.png);
+    background-size: 16px 16px;
+    margin: 0px 6px 0 0;
+}
+
+/* ============================== Styling Info ==============================  */
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 20px 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.title-info {
+    font-size: 22px;
+}
+
+span {
+    color: var(--clr-primary);
+}
+
+.info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 1060px;
+    padding: 50px 0 0 0;
+}
+
+.info-container img {
+    width: 150px;
+}
+
+.info-final {
+    line-height: 35px;
+    width: calc((100%/3)-3px);
+}
+
+/* ============================== Styling Table ==============================  */
+
+.container-table {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-neutral-600);
+    height: 650px;
+}
+
+.title-table {
+    padding-bottom: 20px;
+}
+
+.planos {
+    display: flex;
+    margin-top: 20px;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 50px;
+    box-shadow: 0 0 15px var(--clr-shadow);
+    border-radius: 5px;
+    background-color: var(--clr-neutral-400);
+
+}
+
+.planos img {
+    width: 100px;
+}
+
+td {
+    padding: 10px 15px;
+}
+
+th {
+    font-size: 20px;
+}
+
+tbody tr:nth-of-type(odd) {
+    background-color: var(--clr-neutral-500);
+}
+
+/* ============================== Styling Promo-2 ==============================  */
+
+.promo-2 {
+    background-color: var(--clr-primary);
+    display: flex;
+    padding: 30px 0;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.promo-text-2 {
+    color: var(--clr-neutral-400);
+    line-height: 30px;
+}
+
+.link-promo-2 {
+    background-color: var(--clr-secondary);
+    color: var(--clr-neutral-400);
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 15px;
+
+    border-radius: 0.3em;
+}
+
+a::before {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    background-image: url(assets/icone-foguete.png);
+    background-size: 16px 16px;
+    margin: 0px 6px 0 0;
+}
+
+/* ============================== Styling Footer ==============================  */
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px 0;
+}
+
+.logo-footer img {
+    height: 120px;
+    margin-left: 150px;
+}
+
+.logo-footer p::first-line {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--clr-neutral-900);
+}
+
+.logo-footer p {
+    color: var(--clr-primary);
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contatos {
+    text-align: center;
+    line-height: 40px;
+    font-weight: bold;
+    color: var(--clr-secondary);
+    padding: 0 0 20px 0;
+}
+
+.desenvolvido {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--clr-neutral-500);
+}
