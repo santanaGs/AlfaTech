@@ -82,7 +82,7 @@ a {
     text-transform: uppercase;
     color: var(--clr-neutral-400);
     font-weight: bold;
-    transition: .3s;
+    transition: .4s;
 }
 
 .nav-link:hover{
