@@ -1,0 +1,198 @@
+/* ============================== HTML Reseting / Reiniciando HTML  ==============================  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins';
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* ============================== CSS Variables / Variaveis CSS ==============================  */
+
+:root {
+    /*Colors*/
+    --clr-primary: #2f86d6;
+    --clr-secondary: #23303E;
+
+    --clr-neutral-400: #fff;
+    --clr-neutral-500: #f6f6f6;
+    --clr-neutral-600: #f1f3f7;
+    --clr-neutral-700: #a89f9f;
+    --clr-neutral-900: #000;
+
+    --clr-shadow: rgba(47, 134, 214, 1);
+
+}
+
+/* ============================== Styling Header ==============================  */
+
+.header-content {
+    background-color: var(--clr-primary);
+    width: 100%;
+    height: 160px;
+    margin-inline: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+.logo-topo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-topo img {
+    height: 80px;
+}
+
+.logo-topo p::first-line {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--clr-neutral-900);
+}
+
+.logo-topo p {
+    color: var(--clr-neutral-400);
+    padding-left: 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    color: var(--clr-neutral-400);
+    font-weight: bold;
+    transition: .3s;
+}
+
+.nav-link:hover{
+    color: var(--clr-secondary);
+}
+
+/* ============================== Styling Table ==============================  */
+
+.container-table {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: var(--clr-neutral-500);
+    padding: 50px 0;
+    text-transform: uppercase;
+}
+
+thead{
+    margin: 0 0 0 513px;
+    width: 1220px;
+}
+
+th{
+    background-color: var(--clr-neutral-600);
+    text-align: center;
+    padding: 0 45px;
+    text-transform: uppercase;
+}
+
+th p{
+    font-size: 15px;
+    font-weight: normal;
+    color: var(--clr-neutral-700);
+}
+
+th h4{
+    font-size: 30px;
+}
+
+tr>td:first-child{
+    text-align: left;
+    font-weight: bold;
+    background-color: var(--clr-neutral-600);
+}
+
+td{
+    padding: 20px 23px;
+    text-align: center;
+    background-color: var(--clr-neutral-400);
+}
+
+
+tbody{
+    background-color: var(--clr-neutral-400);
+}
+
+
+/* ============================== Styling Footer ==============================  */
+
+.info-footer{
+    background-color: var(--clr-primary);
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 40px 0;
+}
+
+.logo-footer img {
+    height: 120px;
+    margin-left: 150px;
+}
+
+.logo-footer p::first-line {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--clr-neutral-900);
+}
+
+.logo-footer p {
+    color: var(--clr-neutral-400);
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.info-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contatos {
+    text-align: center;
+    line-height: 10px;
+    font-weight: bold;
+    color: var(--clr-neutral-400);
+    padding: 0 0 20px 0;
+}
+
+.desenvolvido {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--clr-neutral-500);
+}
+
+span{
+    color: var(--clr-primary);
+}

@@ -217,6 +217,12 @@ td {
     padding: 10px 15px;
 }
 
+td:hover{
+    background-color: var(--clr-primary);
+    color: var(--clr-neutral-400);
+    cursor: pointer;
+}
+
 th {
     font-size: 20px;
 }
