@@ -92,25 +92,21 @@ a {
 /* ============================== Styling Table ==============================  */
 
 .container-table {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: center;
+    margin: 60px auto;
     background-color: var(--clr-neutral-500);
-    padding: 50px 0;
     text-transform: uppercase;
 }
 
-thead{
-    margin: 0 0 0 513px;
-    width: 1220px;
+.dot{
+    margin: 0 auto;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #2f86d6;
 }
 
 th{
-    background-color: var(--clr-neutral-600);
-    text-align: center;
-    padding: 0 45px;
-    text-transform: uppercase;
+    padding: 10px;;
 }
 
 th p{
